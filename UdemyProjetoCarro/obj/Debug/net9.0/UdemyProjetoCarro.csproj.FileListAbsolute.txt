@@ -1,0 +1,14 @@
+C:\Users\Vini\Documents\CSharp\UdemyProjetoCarro\bin\Debug\net9.0\UdemyProjetoCarro.exe
+C:\Users\Vini\Documents\CSharp\UdemyProjetoCarro\bin\Debug\net9.0\UdemyProjetoCarro.deps.json
+C:\Users\Vini\Documents\CSharp\UdemyProjetoCarro\bin\Debug\net9.0\UdemyProjetoCarro.runtimeconfig.json
+C:\Users\Vini\Documents\CSharp\UdemyProjetoCarro\bin\Debug\net9.0\UdemyProjetoCarro.dll
+C:\Users\Vini\Documents\CSharp\UdemyProjetoCarro\bin\Debug\net9.0\UdemyProjetoCarro.pdb
+C:\Users\Vini\Documents\CSharp\UdemyProjetoCarro\obj\Debug\net9.0\UdemyProjetoCarro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vini\Documents\CSharp\UdemyProjetoCarro\obj\Debug\net9.0\UdemyProjetoCarro.AssemblyInfoInputs.cache
+C:\Users\Vini\Documents\CSharp\UdemyProjetoCarro\obj\Debug\net9.0\UdemyProjetoCarro.AssemblyInfo.cs
+C:\Users\Vini\Documents\CSharp\UdemyProjetoCarro\obj\Debug\net9.0\UdemyProjetoCarro.csproj.CoreCompileInputs.cache
+C:\Users\Vini\Documents\CSharp\UdemyProjetoCarro\obj\Debug\net9.0\UdemyProjetoCarro.dll
+C:\Users\Vini\Documents\CSharp\UdemyProjetoCarro\obj\Debug\net9.0\refint\UdemyProjetoCarro.dll
+C:\Users\Vini\Documents\CSharp\UdemyProjetoCarro\obj\Debug\net9.0\UdemyProjetoCarro.pdb
+C:\Users\Vini\Documents\CSharp\UdemyProjetoCarro\obj\Debug\net9.0\UdemyProjetoCarro.genruntimeconfig.cache
+C:\Users\Vini\Documents\CSharp\UdemyProjetoCarro\obj\Debug\net9.0\ref\UdemyProjetoCarro.dll
