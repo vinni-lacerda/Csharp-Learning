@@ -1,25 +1,31 @@
 ﻿using System.Runtime.InteropServices;
-
-Carro chevrolet = new("sedan", "onix", "chevrolet", 1999, 100);
-System.Console.WriteLine($"{chevrolet.Modelo}, {chevrolet.Marca}, {chevrolet.Montadora}, {chevrolet.Ano}, {chevrolet.Potencia}");
+Console.WriteLine($"{Cores.Branco} - {(int)Cores.Branco}");
+Console.WriteLine($"{Cores.Vermelho} - {(int)Cores.Vermelho}");
+Console.WriteLine($"{Cores.Preto} - {(int)Cores.Preto}");
+Console.WriteLine($"{Cores.Cinza} - {(int)Cores.Cinza}");
+Console.WriteLine($"{Cores.Azul} - {(int)Cores.Azul}");
+Console.WriteLine("Selecione a cor do carro");
+int cor = Convert.ToInt32(Console.ReadLine());
+Carro chevrolet = new("sedan", "onix", "chevrolet", 1999, 100, cor);
+Console.WriteLine($"{chevrolet.Modelo}, {chevrolet.Marca}, {chevrolet.Montadora}, {chevrolet.Ano}, {chevrolet.Potencia}");
 //chamando o metodo de velocidade maxima
 double velocidadeMaxima = chevrolet.VelocidadeMaxima(chevrolet.Potencia);
-System.Console.WriteLine($"Velocidade maxima(potencia x 1.75): {velocidadeMaxima}");
+Console.WriteLine($"Velocidade maxima(potencia x 1.75): {velocidadeMaxima}");
 //chamando o metodo de aumentar potencia em 3
 double aumentarPotencia = chevrolet.AumentarPotencia(chevrolet.Potencia);
-System.Console.WriteLine(aumentarPotencia);
-System.Console.WriteLine(chevrolet.Potencia);
+Console.WriteLine(aumentarPotencia);
+Console.WriteLine(chevrolet.Potencia);
 //chamando metodo para aumentar a potencia em referencia(trocando o valor da variavel na memoria)
 double aumentarPotencia2 = chevrolet.AumentarPotencia(ref chevrolet.Potencia);
-System.Console.WriteLine(aumentarPotencia2);
-System.Console.WriteLine($"valor por referencia = {chevrolet.Potencia}");
+Console.WriteLine(aumentarPotencia2);
+Console.WriteLine($"valor por referencia = {chevrolet.Potencia}");
 //chamando o metodo aumentar potencia e velocidade utilizando out em uma variavel nao declarada
 double aumentarPotenciaVelocidade = chevrolet.AumentarPotenciaVelocidade(chevrolet.Potencia, out double velocidade);
-System.Console.WriteLine($"Valor da nova potencia: {aumentarPotenciaVelocidade}, valor da velocidade: {velocidade}");
+Console.WriteLine($"Valor da nova potencia: {aumentarPotenciaVelocidade}, valor da velocidade: {velocidade}");
 //Chamando o metodo ExibirInfo utilizando um parametro opcional
 chevrolet.ExibirInfo(chevrolet.Modelo, chevrolet.Marca, chevrolet.Montadora, chevrolet.Potencia);
 //chamando o metodo estático sem fazer uma instancia da classe(objeto)
-System.Console.WriteLine(Carro.ObterValorIpva());
+//Console.WriteLine(Carro.ObterValorIpva());
 public class Carro
 {
     public string? Modelo;
@@ -38,13 +44,15 @@ public class Carro
     }
     public int Potencia;
     public static double ValorIpva;
-    public Carro(string modelo, string marca, string montadora, int ano, int potencia)
+    public int Cor;
+    public Carro(string modelo, string marca, string montadora, int ano, int potencia, int cor)
     {
         Modelo = modelo;
         Marca = marca;
         Montadora = montadora;
         Ano = ano;
         Potencia = potencia;
+        Cor = cor;
     }
     public Carro(string modelo, string marca)
     {
@@ -70,12 +78,12 @@ public class Carro
         velocidade = potencia * 1.75;
         return potencia;
     }
-    public void ExibirInfo(string? modelo, string? marca, string? montadora, int potencia, int ano = 2010)
+    public void ExibirInfo(string? modelo, string? marca, string? montadora, int potencia, int Cor = 1, int ano = 2010)
     {
-        System.Console.WriteLine($"{modelo}, {marca}, {montadora}, {ano}, {potencia}");
+        Console.WriteLine($"{modelo}, {marca}, {montadora}, {ano}, {potencia}, {((Cores)Cor)}");
     }
-    public static double ObterValorIpva()
+    static Carro()
     {
-        return ValorIpva + 4;
+        ValorIpva = 4;
     }
 }
